@@ -10,6 +10,8 @@ type User {
 	posts: [Post!]!
 	likes: [Like!]!
 	comments: [Comment!]!
+  rooms: [Room!]!
+  loginSecret: String
   }
 
 type Post {
@@ -20,7 +22,6 @@ type Post {
   files: [File!]!
   likes: [Like!]!
   comments: [Comment!]!
-  rooms: [Room!]!
 }
 
 type Like {
